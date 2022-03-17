@@ -5,6 +5,9 @@ font-size: xx-large;
 color: #E2D784;
 background-color: #062C30;
 }
+.Txt {
+    font-family: 'Rhodium Libre', serif;
+}
 .colorTxt {
     color: #F5F5F5;
 }
