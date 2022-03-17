@@ -2,9 +2,32 @@
 header {
 font-family: 'Faster One', cursive;
 font-size: xx-large;
-color: #E2D784;
 background-color: #062C30;
+color: #E2D784;
 }
+.colorNav {
+    text-decoration: none;
+    color:#E2D784
+    
+}
+.nav-right {
+    float: right;
+  }
+.colorNav:hover {
+    text-decoration: none;
+    color:#F5F5F5
+}
+.colorNavLogo {
+    text-decoration: none;
+    color:#E2D784
+    
+}
+.colorNavLogo:hover {
+    text-decoration: none;
+    color:#E2D784
+    
+}
+
 .Txt {
     font-family: 'Rhodium Libre', serif;
 }
@@ -19,27 +42,44 @@ footer {
     color: #E2D784;
 background-color: #062C30;
 }
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
+.material-icons-outlined.md-36 { 
+    font-size: 36px; 
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(5, 89, 91); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: black;
+  }
   
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
   
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
   
-    /* Support for IE. */
-    font-feature-settings: 'liga';
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }
