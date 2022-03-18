@@ -31,6 +31,10 @@ color: #E2D784;
 .Txt {
     font-family: 'Rhodium Libre', serif;
 }
+.TxtDiv {
+    font-family: 'Rhodium Libre', serif;
+    font-size: xx-large;
+}
 .colorTxt {
     color: #F5F5F5;
 }
