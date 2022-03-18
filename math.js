@@ -23,6 +23,11 @@ for(var i = 0; i< cyfryTabliczki.length; i++){
 let iloczyn =  cyfra.nr_0*cyfra.nr_1;        //mnożenie pierwszej z drugą cyfrą
 console.log(iloczyn)
 
+const czynnikPierwszy = cyfra.nr_0;           // Początek - kod do wyświetlania czynników mnożenia w html
+const czynnikDrugi = cyfra.nr_1;
+
+document.getElementById("czynnikPierwszy").innerHTML = czynnikPierwszy;
+document.getElementById("czynnikDrugi").innerHTML = czynnikDrugi;  // Koniec
 
 
 
