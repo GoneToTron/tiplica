@@ -41,12 +41,29 @@ document.getElementById("czynnikDrugi").innerHTML = czynnikDrugi;  // Koniec
 }
 
 // Sprawdzenie wyniku 
+
+let ilorazString=document.getElementById("myWynik");
+let ilorazInput = parseFloat(ilorazString);
+let a = parseFloat(czynnikPierwszy);
+let b = parseFloat(czynnikDrugi);
+let ilorazTrue = a * b;
+console.log(a);
+console.log(b);
+console.log(ilorazTrue)
 function wynikGet(){
-  let ilorazInput = document.getElementById("myWynik").value;
-  let ilorazTrue = czynnikDrugi * czynnikPierwszy;
-  return ilorazTrue
-  if (ilorazTrue===ilorazInput){
-    const result = "result";
-    document.getElementById(result).innerHTML = "zajebuście!";
+  
+    if (ilorazTrue>ilorazInput){
+      let wynikGet = document.getElementById("wynikShow");
+      wynikGet.querySelector(".klik").innerHTML = "Lipa!";
+  }else if(ilorazTrue<ilorazInput) {
+    let wynikGet = document.getElementById("wynikShow");
+      wynikGet.querySelector(".klik").innerHTML = "Ale lipa!";
+  }else {
+    let wynikGet = document.getElementById("wynikShow");
+      wynikGet.querySelector(".klik").innerHTML = "Zajebiście!";
+
   }
-};
+
+  }
+
+  
