@@ -42,28 +42,30 @@ document.getElementById("czynnikDrugi").innerHTML = czynnikDrugi;  // Koniec
 
 // Sprawdzenie wyniku 
 
-let ilorazString=document.getElementById("myWynik");
-let ilorazInput = parseFloat(ilorazString);
+
 let a = parseFloat(czynnikPierwszy);
 let b = parseFloat(czynnikDrugi);
 let ilorazTrue = a * b;
 console.log(a);
 console.log(b);
 console.log(ilorazTrue)
-function wynikGet(){
-  
-    if (ilorazTrue>ilorazInput){
-      let wynikGet = document.getElementById("wynikShow");
-      wynikGet.querySelector(".klik").innerHTML = "Lipa!";
-  }else if(ilorazTrue<ilorazInput) {
-    let wynikGet = document.getElementById("wynikShow");
-      wynikGet.querySelector(".klik").innerHTML = "Ale lipa!";
-  }else {
-    let wynikGet = document.getElementById("wynikShow");
-      wynikGet.querySelector(".klik").innerHTML = "Zajebiście!";
-
+function wynikInput () {
+  let c = document.getElementById("mojWynik").value;
+  let wynikText;
+  if (isNaN(c)) {
+    wynikText = "To nie jest liczba gapo";
+  } 
+  else if (c < ilorazTrue || c > ilorazTrue) {
+    wynikText = "Pomyłka mordo";
+  }
+    else if (c=ilorazTrue) {
+      
+    wynikText = "Dobra robota człeniu";
   }
 
-  }
+  document.getElementById("wynikShow").innerHTML = wynikText
+};
+function reLoad() {
+  location.reload();
+}
 
-  

@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Matma</title>
 <head><link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
@@ -40,27 +41,13 @@
 </header>
 <section class="jumbotron Txt">
 
-<div class="container colorbg colorTxt">
-  <div class="row">
-    <br>
-    </div>
- <!--  <input type="text" placeholder="Jak masz na imię?" id="myInput"> -->
-
- <!-- <span class="material-icons-outlined md-36 colorNav"  onclick="getImieInput()">play_circle_outline</span><br> -->
-  Cześć <span id="imieVar"></span>, rozwiąż równanie.
-</div>
-  <div class="container colorbg colorTxt TxtDiv text-center">
-        <div class="row">
-        <br><br>
-        </div>
+<div class="container colorbg colorTxt TxtDiv text-center">
+  <div class="row"><br><br>        
+  </div>
 <div>
-    Ile to będzie?<br> <span id="czynnikPierwszy")></span> x <span id="czynnikDrugi")></span>
-  
+    Ile to będzie?<br> <span id="czynnikPierwszy")></span> x <span id="czynnikDrugi")></span>  
 </div>
 
-<div class="row">
-<br>
-</div>
 </div>
 <div class="container colorbg colorTxt TxtDiv text-center">
   <div class="row">
@@ -69,8 +56,10 @@
       </div>
       <div class="col">
             <div class="input-group">
-            <input type="text" class="form-control" placeholder="Wpisz tu wynik" aria-label="Wynik" aria-describedby="button-addon2">
-            <button class="btn btn-light" type="button" id="myWynik" onclick="wynikGet()" >Sprawdź</button>
+            <input type="text" class="form-control" placeholder="Wpisz tu wynik" aria-label="Wynik" aria-describedby="button-addon2" input id="mojWynik">
+            <button class="btn btn-light" type="button" id="myWynik" onclick="wynikInput()">Sprawdź</button><span class="material-icons-outlined md-36 nav-right" onclick="reLoad()">
+              refresh
+              </span>
             </div>
     </div>
     <div class="col">
@@ -78,13 +67,15 @@
     </div>
   </div>
   <div class="row">
+    
     <br>
     </div><div class="row">
       <div>
-      <br><p class="klik " id="wynikShow">Tesks</p> <!--Coś ewidentnie nie działa w JS-->
-      </div><div class="row">
+        <p class="klik" id="wynikShow">Czekam...</p>
+      </div>
+      <div class="row">
         </div>
-        <br><br><br>
+        <br>
         </div>
 </div>
 <script src="math.js"></script> <!--Tutaj, wcześniej, czy dwa razy?-->
