@@ -1,0 +1,1 @@
+let punkty = 0;

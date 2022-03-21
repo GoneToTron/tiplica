@@ -6,13 +6,13 @@ return losDrugi
 }
 losowanie1();
 let losWincyj = losowanie1();
-console.log(losWincyj);                     // Koniec
+ // Koniec
 
 const cyfryTabliczki = String(losWincyj)    // Początek funkcji zmieniającej liczbę na cyfry
 .split('')
 .map(str => Number(str));
 
-console.log(cyfryTabliczki);                //koniec
+ //koniec
 
 
 let cyfra = {};                             // Początek - wyciągnięcie cyfr z arraya
@@ -21,8 +21,6 @@ for(var i = 0; i< cyfryTabliczki.length; i++){
 }                                            // koniec
 
 let iloczyn =  cyfra.nr_0*cyfra.nr_1;        //mnożenie pierwszej z drugą cyfrą
-console.log(iloczyn)
-
 const czynnikPierwszy = cyfra.nr_0;           // Początek - kod do wyświetlania czynników mnożenia w html
 const czynnikDrugi = cyfra.nr_1;
 
@@ -30,25 +28,15 @@ document.getElementById("czynnikPierwszy").innerHTML = czynnikPierwszy;
 document.getElementById("czynnikDrugi").innerHTML = czynnikDrugi;  // Koniec
 
 
-   
-  function getImieInput(){                    // Początek - wyświetlanie imienia. 
 
-    var imieVar = document.getElementById("myInput").value;
-    
-  
-  document.getElementById("imieVar").innerHTML = imieVar;
-// Koniec
+function AutoRefresh( t ) {                 //autorefresh
+  setTimeout("location.reload(true);", t);
 }
 
 // Sprawdzenie wyniku 
-
-
 let a = parseFloat(czynnikPierwszy);
 let b = parseFloat(czynnikDrugi);
 let ilorazTrue = a * b;
-console.log(a);
-console.log(b);
-console.log(ilorazTrue)
 function wynikInput () {
   let c = document.getElementById("mojWynik").value;
   let wynikText;
@@ -66,12 +54,15 @@ function wynikInput () {
       let inputArr = ['Dobrze!', 'Geniuszu! Mata i Sanah piszą piosenkę o Tobie!', 'Tak jest...Dawaj następne!', 'Cały TikTok robi filmy o geniuszu!'];
       let randomArr = inputArr[Math.floor(Math.random()*inputArr.length)]; 
     wynikText = randomArr;
-      
+   
+    AutoRefresh(3500);  //autorefresh function call
+     
   }
   else if (c ='undefined') {
     let cUn = 'Tak jest...Dawaj następne!';
-    
     wynikText = cUn;
+    AutoRefresh(3500);
+
   }
 
   document.getElementById("wynikShow").innerHTML = wynikText
@@ -79,7 +70,7 @@ function wynikInput () {
 function reLoad() {
   location.reload();
 }
-$(document).ready(function() {
+$(document).ready(function() { // audio click
   var obj = document.createElement("audio");
   obj.src = "click.wav";
   obj.volume = 0.1;
@@ -89,7 +80,10 @@ $(document).ready(function() {
 
   $(".playSound").click(function() {
     obj.play();
-    // obj.pause();
+    // end of audio click;
   });
 });
-
+/*document.getElementById("mojWynik").addEventListener("keyup", function(event) {
+  if (event.key === 'Enter') {
+    document.getElementById("mojWynik").submit();
+  return false;}}) */
