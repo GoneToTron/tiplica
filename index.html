@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="tabliczka mnożenia">
+<meta charset="utf-8">
 <title>Matma</title>
 <head><link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -21,10 +23,13 @@
     calculate
     </span>Fast X</a></div>
 
-    <div class="col justify-content-end">
+    <div class="col-auto justify-content-end">
     <div class="nav navbar-nav justify-content-end">
-      <a class="colorNav"></a>
-    <span class="playSound material-icons-outlined md-36 ml-auto mr-1" id="myBtn">
+      <a class="colorNav justify-content-end">
+        <span class="playSound material-icons-outlined md-36 " onclick="reLoad()">
+          refresh
+          </span>
+    <span class="playSound material-icons-outlined md-36 ml-auto mr-1 float-right" id="myBtn">
       help_outline
       </span>
       <div id="myModal" class="modal">
@@ -32,7 +37,9 @@
       <!-- Modal content -->
       <div class="modal-content Txt">
         <span class="close playSound">&times;</span>
-        <p>Rozwiązuj szybkie zadania z tabliczki mnożenia. </p>
+        <p>Rozwiązuj szybkie zadania z tabliczki mnożenia.<br> Jeśli chcesz zrobić nowe zadanie kliknij w <span class="playSound material-icons-outlined md-36">
+          refresh
+          </span> </p>
 
       </div>
       <script src="index.js"></script>
@@ -59,10 +66,8 @@
       </div>
       <div class="col">
             <div class="input-group">
-            <input type="text" class="form-control" placeholder="Wpisz tu wynik" aria-label="Wynik" aria-describedby="button-addon2" input id="mojWynik">
-            <button class="playSound btn btn-light" type="button" id="myWynik" onclick="wynikInput()">Sprawdź</button><span class="playSound material-icons-outlined md-36 nav-right" onclick="reLoad()">
-              refresh
-              </span>
+            <input type="number" class="form-control" placeholder="Wpisz tu wynik" aria-label="Wynik" aria-describedby="button-addon2" input id="mojWynik">
+            <button class="playSound btn btn-light" type="button" id="myWynik" onclick="wynikInput()">Sprawdź</button> 
             </div>
     </div>
     <div class="col">
@@ -74,16 +79,18 @@
     <br>
     </div><div class="row">
       <div>
-        <p class="klik" id="wynikShow">Czekam...</p>
+        <p class="klik" id="wynikShow">Czekam...</p>  <span class="playSound material-icons-outlined md-36 " onclick="reLoad()">
+          refresh
+          </span>
       </div>
       <div class="row">
         </div>
         <br>
         </div>
 </div>
-<script src="math.js"></script> <!--Tutaj, wcześniej, czy dwa razy?-->
+<script src="math.js"></script> 
  
-<footer class="container fixed-bottom shadow p-3 mb-5 rounded">Wersja mocno testowa</footer>
+<footer class="container fixed-bottom shadow p-3 mb-5 rounded">1.1 	&copy;Tata Hani i Tytusa</footer>
 </section>
 
 </html>

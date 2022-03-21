@@ -5,16 +5,24 @@
   <p>You are most welcome to comment and help.</p>
   <p>Version history:</p>
 <ul>
+<li> v1.1:<br>
+    2022-03-21<br>
+    <ul>Changelog:
+      <li>Added support for Polish characters,
+      <li>'undefined' problem solved,
+      <li> Texy arrays added
+    </ul>
   <li> v1:<br>
     2022-03-20<br>
-    <ul>Changes:
+    <ul>Changelog:
       <li>Added click sound, 
-    </ul><ul>Problems:
-    <li>I don't know why if the result is zero, it displays :undefined:,
-    <li>No click sound on reload button
+    </ul>
+    <ul>Problems of current version:
+    <li>undefined
     </ul>
     <ul>To Do:
       <li>Leaderboard,
       <li>Mobile version adjust,
+      <li>Adding several languages
     </ul>
  

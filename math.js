@@ -53,14 +53,25 @@ function wynikInput () {
   let c = document.getElementById("mojWynik").value;
   let wynikText;
   if (isNaN(c)) {
-    wynikText = "To nie jest liczba gapo";
+    let inputArr = ['To nie jest liczba', 'Ale skucha - to nie liczba!'];
+    let randomArr = inputArr[Math.floor(Math.random()*inputArr.length)];
+    wynikText = randomArr;
   } 
   else if (c < ilorazTrue || c > ilorazTrue) {
-    wynikText = "Pomyłka mordo";
+    let inputArr = ['Błąd mordeczko', 'Poważnie? Błąd!', 'Żle! Pani Marta jest smutna :(', 'Nieeeeeeeee!'];
+    let randomArr = inputArr[Math.floor(Math.random()*inputArr.length)];
+    wynikText = randomArr;
   }
     else if (c=ilorazTrue) {
+      let inputArr = ['Dobrze!', 'Geniuszu! Mata i Sanah piszą piosenkę o Tobie!', 'Tak jest...Dawaj następne!', 'Cały TikTok robi filmy o geniuszu!'];
+      let randomArr = inputArr[Math.floor(Math.random()*inputArr.length)]; 
+    wynikText = randomArr;
       
-    wynikText = "Dobra robota człeniu";
+  }
+  else if (c ='undefined') {
+    let cUn = 'Tak jest...Dawaj następne!';
+    
+    wynikText = cUn;
   }
 
   document.getElementById("wynikShow").innerHTML = wynikText
