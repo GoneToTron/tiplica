@@ -1,1 +1,0 @@
-let punkty = 0;

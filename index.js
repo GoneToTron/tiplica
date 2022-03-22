@@ -1,10 +1,10 @@
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 
-var btn = document.getElementById("myBtn");
+let btn = document.getElementById("myBtn");
 
 
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 
 btn.onclick = function() {
@@ -22,3 +22,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+
+
