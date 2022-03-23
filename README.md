@@ -4,12 +4,17 @@
   <p>It's in Polish, but ready to translate to any language. My idea is to make it as simple as possible.
   <p>You are most welcome to comment and help.</p>
   <p>Version history:</p>
+  <ul>
+<li> v1.21:<br>
+    2022-03-23<br>
+    <ul>Changelog:
+      <li>Added animation,
+    </ul>
 <ul>
 <li> v1.2:<br>
     2022-03-22<br>
     <ul>Changelog:
       <li>Added autoreload after correct answer,
-      <li>
     </ul>
 <li> v1.1:<br>
     2022-03-21<br>
@@ -24,7 +29,7 @@
       <li>Added click sound, 
     </ul>
     <ul>Problems of current version:
-    <li>undefined
+    <li>Enter key dosen't work.
     </ul>
     <ul>To Do:
       <li>Leaderboard,

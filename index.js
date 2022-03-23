@@ -23,7 +23,7 @@ window.onclick = function(event) {
   }
 }
 $(document).ready(function(){
-  $('[data-toggle="popover"]').popover();   
+  $('[data-toggle="popover"]').popover();  
+  $(".bloop").addClass("animate__bounceIn");
+  $(".klik").addClass("animate__animated animate__bounceIn animate__delay-2s");
 });
-
-
