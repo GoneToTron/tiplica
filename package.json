@@ -1,0 +1,24 @@
+{
+  "name": "tiplica",
+  "version": "1.0.0",
+  "description": "<h2> Project Tiplica</h2>\r   <p>This is my first coding project. It's supposed to help my kids learn their multiplication tables, and in the future, other math topics as well.</p>\r   <p>It's in Polish, but ready to translate to any language. My idea is to make it as simple as possible.\r   <p>You are most welcome to comment and help.</p>\r   <p>Version history:</p>\r   <ul>\r <li> v1.21:<br>\r     2022-03-23<br>\r     <ul>Changelog:\r       <li>Added animation,\r     </ul>\r <ul>\r <li> v1.2:<br>\r     2022-03-22<br>\r     <ul>Changelog:\r       <li>Added autoreload after correct answer,\r     </ul>\r <li> v1.1:<br>\r     2022-03-21<br>\r     <ul>Changelog:\r       <li>Added support for Polish characters,\r       <li>'undefined' problem solved,\r       <li> Texy arrays added\r     </ul>\r   <li> v1:<br>\r     2022-03-20<br>\r     <ul>Changelog:\r       <li>Added click sound, \r     </ul>\r     <ul>Problems of current version:\r     <li>Enter key dosen't work.\r     </ul>\r     <ul>To Do:\r       <li>Leaderboard,\r       <li>Mobile version adjust,\r       <li>Adding several languages\r     </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoneToTron/tiplica.git"
+  },
+  "author": "goneToTron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GoneToTron/tiplica/issues"
+  },
+  "homepage": "https://github.com/GoneToTron/tiplica#readme",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
