@@ -6,6 +6,13 @@
   <p>You are most welcome to comment and help.</p>
   <p>Version history:</p>
   <ul>
+  <li> v1.22:<br>
+    ???????<br>
+    <ul>Changelog:
+      <li>Username modal added,
+      <li>,
+    </ul>
+<ul>
 <li> v1.21:<br>
     2022-03-23<br>
     <ul>Changelog:
