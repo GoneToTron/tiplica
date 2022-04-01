@@ -30,9 +30,13 @@ for (let i = 0; i < cyfryTabliczki.length; i++) {
 const iloczyn = cyfra.nr_0 * cyfra.nr_1; // mnożenie pierwszej z drugą cyfrą
 const czynnikPierwszy = cyfra.nr_0; // Początek - kod do wyświetlania czynników mnożenia w html
 const czynnikDrugi = cyfra.nr_1;
+const czynnikTrzeci = cyfra.nr_2;
+const czynnikCzwarty = cyfra.nr_3;
 
 document.getElementById('czynnikPierwszy').innerHTML = czynnikPierwszy;
-document.getElementById('czynnikDrugi').innerHTML = czynnikDrugi; // Koniec
+document.getElementById('czynnikDrugi').innerHTML = czynnikDrugi;
+document.getElementById('czynnikTrzeci').innerHTML = czynnikTrzeci;
+document.getElementById('czynnikCzwarty').innerHTML = czynnikCzwarty; // Koniec
 
 function AutoRefresh(t) { // autorefresh
   setTimeout('location.reload(true);', t);
@@ -41,7 +45,9 @@ function AutoRefresh(t) { // autorefresh
 // Sprawdzenie wyniku
 const a = parseFloat(czynnikPierwszy);
 const b = parseFloat(czynnikDrugi);
-const ilorazTrue = a * b;
+const d = parseFloat(czynnikTrzeci);
+const e = parseFloat(czynnikCzwarty);
+const ilorazTrue = a * b * d * e;
 function wynikInput() {
   let c = document.getElementById('mojWynik').value;
   let wynikText;

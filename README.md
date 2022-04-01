@@ -6,11 +6,11 @@
   <p>You are most welcome to comment and help.</p>
   <p>Version history:</p>
   <ul>
-  <li> v1.22:<br>
-    ???????<br>
+  <li> v1.3:<br>
+    2022-03-31<br>
     <ul>Changelog:
-      <li>Username modal added,
-      <li>,
+      <li>Multiplication now has 4 digits ,
+      <li>Logo animation added,
     </ul>
 <ul>
 <li> v1.21:<br>
